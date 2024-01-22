@@ -116,4 +116,15 @@ main = do
 
 ---
 ### Задание 5
+```haskell
+pyramidal :: Int -> Int
+pyramidal x = (2 * x^3 + 3 * x^2 + x) `div` 6
+
+pFermatList :: Int -> [Int]
+pFermatList x = map pyramidal [1..x]
+
+main = do
+  print(pFermatList 50)
+```
+![image](https://github.com/myashaa/flp/assets/79213041/9f35ee48-9fb8-4b7d-84c9-fac41a10c282)
 
