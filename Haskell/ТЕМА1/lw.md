@@ -56,11 +56,10 @@ main = do
 2 )  
 ```haskell
 main = do
-  let input = ['a', 'b', 'c']
-  let getB x = head (tail x)
-  print(getB input)
+  let oddNatList = filter odd [1..39]
+  print(oddNatList)
 ```
-![image](https://github.com/myashaa/flp/assets/79213041/a36e1876-8d2c-49f3-b466-d16f6b4f3c83)
+![image](https://github.com/myashaa/flp/assets/79213041/fb66f98d-644b-4a8a-b299-915934c9cf04)
 
 3 )  
 ```haskell
