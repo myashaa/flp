@@ -78,7 +78,16 @@ main = do
   print(getOddNatList count)
 ```
 ![image](https://github.com/myashaa/flp/assets/79213041/dd8ecbd1-5e6b-4d77-a402-f3e99e3483b5)
---- 
+
+5 )  
+```haskell
+main = do
+  let count = 20
+  let isOdd x = (mod x 2) /= 0
+  let getOddNatList x = filter isOdd [1..2 * x]
+  print(getOddNatList count)
+```
+![image](https://github.com/myashaa/flp/assets/79213041/09ef94a5-d443-4b9a-8098-e0dde70c35b9)
 --- 
 ### Задание 4
 
