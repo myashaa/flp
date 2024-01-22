@@ -21,19 +21,19 @@ main = do
 ```haskell
 main = do
   let input = [['a', 'b'], ['c','d']]
-  let getB x = tail (head x)
+  let getB x = head (tail (head x))
   print(getB input)
 ```
-![image](https://github.com/myashaa/flp/assets/79213041/c471d18d-5043-4927-b8f9-c65ffefb0229)
+![image](https://github.com/myashaa/flp/assets/79213041/9d90ad84-21a4-4fad-b697-f006628152b9)
 
 3 )  
 ```haskell
 main = do
   let input = [['a', 'c', 'd'], ['a','b']]
-  let getB x = tail (head (tail x))
+  let getB x = head (tail (head (tail x)))
   print(getB input)
 ```
-![image](https://github.com/myashaa/flp/assets/79213041/388a693e-addd-4d40-8bc2-8cd91e3d388b)
+![image](https://github.com/myashaa/flp/assets/79213041/d2adb00f-ae8b-47bb-bb22-2a43f58368ca)
 
 4 )  
 ```haskell
