@@ -64,11 +64,11 @@ main = do
 3 )  
 ```haskell
 main = do
-  let input = ['a', 'b', 'c']
-  let getB x = head (tail x)
-  print(getB input)
+  let isOdd x = (mod x 2) /= 0
+  let oddNatList = filter isOdd [1..39]
+  print(oddNatList)
 ```
-![image](https://github.com/myashaa/flp/assets/79213041/a36e1876-8d2c-49f3-b466-d16f6b4f3c83)
+![image](https://github.com/myashaa/flp/assets/79213041/a5a7190c-a293-4544-8226-978774054929)
 --- 
 ### Задание 4
 
