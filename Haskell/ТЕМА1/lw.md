@@ -38,11 +38,11 @@ main = do
 4 )  
 ```haskell
 main = do
-  let count = 20
-  let getOddNatList x = [1,3..2 * x]
-  print(getOddNatList count)
+  let input = [['a','d'], ['b', 'c']]
+  let getB x = head (head (tail x))
+  print(getB input)
 ```
-![image](https://github.com/myashaa/flp/assets/79213041/dd8ecbd1-5e6b-4d77-a402-f3e99e3483b5)
+![image](https://github.com/myashaa/flp/assets/79213041/ce6d4c47-68af-4e8d-aadc-dd932809b9fe)
 --- 
 ### Задание 3
 1 )  
@@ -69,6 +69,16 @@ main = do
   print(oddNatList)
 ```
 ![image](https://github.com/myashaa/flp/assets/79213041/a5a7190c-a293-4544-8226-978774054929)
+
+4 )  
+```haskell
+main = do
+  let count = 20
+  let getOddNatList x = [1,3..2 * x]
+  print(getOddNatList count)
+```
+![image](https://github.com/myashaa/flp/assets/79213041/dd8ecbd1-5e6b-4d77-a402-f3e99e3483b5)
+--- 
 --- 
 ### Задание 4
 
