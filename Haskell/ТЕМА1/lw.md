@@ -45,8 +45,32 @@ main = do
 ![image](https://github.com/myashaa/flp/assets/79213041/893e5d1d-3cbb-4c1b-ab12-a0930b8a20d9)
 --- 
 ### Задание 3
+1 )  
+```haskell
+main = do
+  let oddNatList = [1,3..39]
+  print(oddNatList)
+```
+![image](https://github.com/myashaa/flp/assets/79213041/476b86d4-3c39-4a65-a0e3-adf94dc15969)
 
----
+2 )  
+```haskell
+main = do
+  let input = ['a', 'b', 'c']
+  let getB x = head (tail x)
+  print(getB input)
+```
+![image](https://github.com/myashaa/flp/assets/79213041/a36e1876-8d2c-49f3-b466-d16f6b4f3c83)
+
+3 )  
+```haskell
+main = do
+  let input = ['a', 'b', 'c']
+  let getB x = head (tail x)
+  print(getB input)
+```
+![image](https://github.com/myashaa/flp/assets/79213041/a36e1876-8d2c-49f3-b466-d16f6b4f3c83)
+--- 
 ### Задание 4
 
 ---
