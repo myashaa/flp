@@ -83,6 +83,15 @@ main = do
 ```haskell
 main = do
   let count = 20
+  let getOddNatList x = filter odd [1..2 * x]
+  print(getOddNatList count)
+```
+![image](https://github.com/myashaa/flp/assets/79213041/8d6058f1-9baf-450f-a88c-c3ebfdc25bb5)
+
+6 )  
+```haskell
+main = do
+  let count = 20
   let isOdd x = (mod x 2) /= 0
   let getOddNatList x = filter isOdd [1..2 * x]
   print(getOddNatList count)
