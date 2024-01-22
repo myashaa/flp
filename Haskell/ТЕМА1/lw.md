@@ -6,7 +6,8 @@ main = do
   print(getChar input)
 ```
 ![image](https://github.com/myashaa/flp/assets/79213041/ab1eea53-7a43-4152-81fa-217dccd6e96e)
---- 
+
+---  
 ### Задание 2
 1 )  
 ```haskell
@@ -43,6 +44,7 @@ main = do
   print(getB input)
 ```
 ![image](https://github.com/myashaa/flp/assets/79213041/ce6d4c47-68af-4e8d-aadc-dd932809b9fe)
+
 --- 
 ### Задание 3
 1 )  
@@ -97,8 +99,20 @@ main = do
   print(getOddNatList count)
 ```
 ![image](https://github.com/myashaa/flp/assets/79213041/09ef94a5-d443-4b9a-8098-e0dde70c35b9)
+
 --- 
 ### Задание 4
+```haskell
+triangular :: Int -> Int
+triangular x = x * (x + 1) `div` 2
+
+tFermatList :: Int -> [Int]
+tFermatList x = map triangular [1..x]
+
+main = do
+  print(tFermatList 50)
+```
+![image](https://github.com/myashaa/flp/assets/79213041/9de3ec2d-150b-4694-8301-b6050a4397ca)
 
 ---
 ### Задание 5
