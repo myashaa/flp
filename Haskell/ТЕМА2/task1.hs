@@ -1,3 +1,4 @@
+-- oddEven(L) -  функция перестановки местами соседних элементов списка L
 oddEven :: [Int] -> [Int]
 oddEven []  = []
 oddEven [l] = [l]
