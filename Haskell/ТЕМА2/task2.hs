@@ -1,4 +1,5 @@
 -- insert (L,A,n) -  функция включения в список L заданного атома А на определенную позицию n
+
 insert :: [a] -> a -> Int -> [a]
 insert l a n = (take n l) ++ [a] ++ (drop n l)
 
