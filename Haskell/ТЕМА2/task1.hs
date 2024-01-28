@@ -1,6 +1,6 @@
 oddEven :: [Int] -> [Int]
 oddEven []  = []
-oddEven [x] = [x]
+oddEven [l] = [l]
 oddEven (x:y:xs) = y:x:(oddEven xs)
 
 main = do
