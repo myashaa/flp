@@ -13,8 +13,7 @@ print(mySplitAt 10 [1,2,3,4,5])
 ```
 mySplitAt :: Int -> [a] -> ([a], [a])
 mySplitAt n xs
-  | n < 0 = error "invalid index"
-  | n == 0 = ([], xs)
+  | n <= 0 = ([], xs)
   | n > length xs = (xs, [])
   | otherwise = (take n xs, drop n xs)
 ```
