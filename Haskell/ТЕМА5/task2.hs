@@ -6,7 +6,6 @@ import Data.Char
 replacePunctuation :: Char -> String -> String
 replacePunctuation replaceChar = map (\c -> if isPunctuation c then replaceChar else c)
 
-main :: IO()
 main = do
   hSetBuffering stdout NoBuffering
   putStr "Введите название входного файла:"
