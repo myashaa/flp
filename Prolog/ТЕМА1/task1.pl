@@ -27,14 +27,12 @@ grandmother(X, Y) :- female(X), parent(X, Z), parent(Z, Y).
 grandson(X, Y) :- male(X), parent(Y, Z), parent(Z, X).
 
 % ?- sister(X, jim).
-sister(X, Y) :- female(X), parent(Z, X), parent(Z, Y), different(X, Y).
 different(X, Y) :- X \= Y.
+sister(X, Y) :- female(X), parent(Z, X), parent(Z, Y), different(X, Y).
 
 % ?- aunt(ann, tammy).
 aunt(X, Y) :- sister(X, Z), parent(Z, Y).
 
 % ?- cousin(bob, tammy).
-cousin(X, Y) :- parent(A, X), parent(B, Y), sibling(A, B).
 sibling(X, Y) :- parent(Z, X), parent(Z, Y), different(X, Y).
-
-
+cousin(X, Y) :- parent(A, X), parent(B, Y), sibling(A, B).
