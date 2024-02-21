@@ -10,7 +10,7 @@ seg(9, point(12, 12), point(12, 2)).
 
 % Вопросы
 % ?- perimetr(A,B,C,D,P,S).
-per_sq(A, B, C, D, P, S) :- 
+perimetr(A, B, C, D, P, S) :- 
   cross(A, B, point(X1, Y1), _, _),
   cross(A, D, point(X2, Y1), _, _),
   cross(C, B, point(X1, Y2), _, _),
