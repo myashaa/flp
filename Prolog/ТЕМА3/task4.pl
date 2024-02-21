@@ -2,4 +2,4 @@
 % ?- place(x,[a,b,c],L).
 place(X, [Y|Rest], [X,Y|Rest]).
 place(X, [Y|Rest], [Y|NewRest]) :- 
-    place(X, Rest, NewRest).
+  place(X, Rest, NewRest).
