@@ -8,7 +8,7 @@ seg(7, point(10, 12), point(10, 3)).
 seg(8, point(11, 13), point(11, 3)).
 seg(9, point(12, 12), point(12, 2)).
 
-seglength(N, L) :- seg(N, point(X1, Y1), point(X2, Y2)),
+seg_len(N, L) :- seg(N, point(X1, Y1), point(X2, Y2)),
   sqrt((X2 - X1) * (X2 - X1) + (Y2 - Y1) * (Y2 - Y1), L).
 
 % Вопросы
@@ -16,5 +16,5 @@ seglength(N, L) :- seg(N, point(X1, Y1), point(X2, Y2)),
 cross(N, M, point(X, Y), NL, ML) :- seg(N, point(X1, Y), point(X2, Y)), seg(M, point(X, Y3), point(X, Y4)),
   X1 < X, X < X2,
   Y4 < Y, Y < Y3,
-  seglength(N, NL),
-  seglength(M, ML).
+  seg_len(N, NL),
+  seg_len(M, ML).
