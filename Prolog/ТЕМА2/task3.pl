@@ -25,9 +25,9 @@ perimetr(A, B, C, D, P, S) :-
   cross(A, D, point(X2, Y1), _, _),
   cross(C, B, point(X1, Y2), _, _),
   cross(C, D, point(X2, Y2), _, _),
-  Y1 > Y2,
   X1 > X2,
-  S1 is abs(X2 - X1),
-  S2 is abs(Y1 - Y2),
-  P is (S1 + S2) * 2,
-  S is S1 * S2.
+  Y1 > Y2,
+  L1 is abs(X2 - X1),
+  L2 is abs(Y2 - Y1),
+  P is (L1 + L2) * 2,
+  S is L1 * L2.
