@@ -2,18 +2,25 @@
 
 import System.IO
 import Data.Char
+import System.Directory
+import System.Environment
 
 replacePunctuation :: Char -> String -> String
 replacePunctuation replaceChar = map (\c -> if isPunctuation c then replaceChar else c)
 
+main :: IO()
 main = do
-  hSetBuffering stdout NoBuffering
-  putStr "Введите название входного файла:"
-  inputFile <- getLine
-  putStr "Введите название выходного файла:"
-  outputFile <- getLine
-  putStr "Введите символ, котрый будет использоваться для замены:"
-  replaceChar <- getChar
-
-  inputText <- readFile inputFile
-  writeFile outputFile (replacePunctuation replaceChar inputText)
+  args <- getArgs
+  if length args /= 3
+    then putStrLn "Неверное количество входных параметров."
+    else do
+      let 
+        inputFile = args !! 0
+        outputFile = args !! 1
+        replaceChar = head $ args !! 2
+      srcExists <- doesFileExist inputFile
+      if not srcExists
+        then putStrLn "Входной файл не найден."
+        else do
+          inputText <- readFile inputFile
+          writeFile outputFile (replacePunctuation replaceChar inputText)
