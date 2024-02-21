@@ -13,8 +13,8 @@ seg_len(N, L) :- seg(N, point(X1, Y1), point(X2, Y2)),
 
 % Вопросы
 % ?- cross(N,M,point(X,Y),NL,ML).
-cross(N, M, point(X, Y), NL, ML) :- seg(N, point(X1, Y), point(X2, Y)), seg(M, point(X, Y3), point(X, Y4)),
+cross(N, M, point(X, Y), NL, ML) :- seg(N, point(X1, Y), point(X2, Y)), seg(M, point(X, Y1), point(X, Y2)),
   X1 < X, X < X2,
-  Y4 < Y, Y < Y3,
+  Y2 < Y, Y < Y1,
   seg_len(N, NL),
   seg_len(M, ML).
