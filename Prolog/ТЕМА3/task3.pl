@@ -2,5 +2,5 @@
 % ?- total([1,2,3],N).
 total([], 1).
 total([H|T], Result) :- 
-    total(T, Temp),
-    Result is H * Temp.
+  total(T, Temp),
+  Result is H * Temp.
